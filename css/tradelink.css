@@ -1,0 +1,50 @@
+/*
+We are going to start by making it for phone users
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    align-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 20px;
+    margin-right: 5px;
+}
+.hd1{
+    font-size: 13px;
+    margin-right: 5px;
+}
+.link{
+    color: red;
+}
+#searchBar-container{
+    flex: 1;
+    display: flex;
+}
+#searchBar{
+    flex: 1;
+}
+#searchIcon{
+    height: 10px;
+  
+}
+#searchBtn{
+    width: 8px;
+    height: 18px;
+    border-left: none;
+    margin-left:-20px ;
+}
+#cartIcon{
+ width: 30px;
+ margin-left: 5px;
+}
