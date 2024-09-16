@@ -3,40 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeLink.com</title>
-    <link rel="stylesheet" href="css/tradelink.css">
+    <link rel="stylesheet" href="css/tradelink1.css">
+    <title>tradelink.com</title>
 </head>
 <body>
     <header>
-        <section id="head1">
-       
-            <img src="icons/tradelink-logo-removebg-preview.png" alt="logo" id="logo">
-      
-        <span class="hd1">
-        TRADE<span class="link">LINK</span>
-        </span>
-       
-        <img src="icons/cart_icon-removebg-preview.png" alt="cart icon" id="cartIcon">
+        <!--We are going to have three sections of the header -->
+        <section id="firstSection">
+            <!--In this section we will have the the logo, the name of the website and the cart in that order-->
+            <div id="logoContainer">
+                <!-- we are going to place the image of the logo in this div-->
+                <img src="icons/tradelink-logo-removebg-preview.png" alt="logo" id="logo">
+            </div>
 
-        </section>
-        <section id="head2">
-            <div id="searchBar-container">
-                <input type="text" placeholder="Search for item" id="searchBar">
-                <button id="searchB">
-                    <img src="icons/searcj.jfif" alt="search icon" id="searchIcon">
-                </button>
+            <div id="h1Container">
+                <!--these dive will be useful when we will make the section flexbox-->
+                <h1>
+                    Trade<span class='link'>Link</span>  <!--we have used the link class in order to style the link part of the header red-->
+                </h1>
+            </div>
+
+            <div id="cartContainer">
+                <!--lastly in our section we are going to add the cart to the right-->
+                <img src="icons/cart_icon-removebg-preview.png" alt="cart" id="cart">
             </div>
         </section>
-    </header>
-    
-    <nav>
-        <img src="icons/humberger-menu-removebg-preview.png" alt="menu" id="menu">
+        <!--we are now going to add the second section of the header, which complies of the search bar and the search icon-->
+        <section id="secondSection">
+            <input type="text" placeholder="Search for item.." id="searchBar">
+            <!--Now let's add the search icon-->
+            <button id="searchBtn">
+                <img src="icons/searcj-removebg-preview.png" alt="search" id="searchIcon">
+                <!--we have placed the search icon into a button-->
+            </button>
+        </section>
+        <!--we are now going to make the last header section, thirdSection-->
+       <section id="thirdSection">
+        <!--This section will complise of two divs, for the menu and the links-->
+         <div id='menuContainer'>
+            <img src="icons/humberger-menu-removebg-preview.png" alt="menu" id="menuImage">
+         </div>
+         <div id="linksContainer">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
-    </nav>
-    <main></main>
+         </div>
+       </section>
+    </header>
+    <main>
+        <!--this main will have atleast three sections, let us begin with the first-->
+    <section id="mainFirstSection">
+     <div id="discountContainer">
+        Get up to 30% Off
+        <p>
+        New Arrivals
+        </p>
+        <p>
+            <button id="shopNowBtn">
+                SHOP NOW
+            </button>
+        </p>
+     </div>
+     <div id="womanContainer">
+        <img src="icons/women-fashion-removebg-preview.png" alt="womenImage" id="womanImage">
+     </div>
+        </section>
+
+        <section id="mainSecondSection">
+            
+            <div id="firstProduct">
+               <img src="products/computer1.jpg" alt="computer" id="computerImage1">
+               <img src="products/hd camera.jfif" alt="hdcamera" id="hdCamera1">
+            </div>
+           
+            <div id="secondProduct">
+                <img src="products/ps4controller2.jfif" alt="ps2controller" id="ps2Controller1">
+                <img src="products/smartwatch2.jfif" alt="smart watch" id="smartwatch1"> 
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
