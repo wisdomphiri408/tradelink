@@ -1,0 +1,198 @@
+/*
+Before we start to style our tradelink home page we must first
+ set the default padding and the margins of the  browser to zero
+*/
+
+body{
+    margin: 0px;  
+    padding: 0px;
+    /*
+    Now the body has zero margin and padding
+    */
+}
+
+header{
+    position: relative;
+    right: 0;
+    left: 0;
+    /*these codes ensures that the header takes the whole space from left to right without changing it */
+    background-color: #f5f5f5; 
+    /* the code sets the background color of the header to lightgray*/
+    padding: 10px 10px 10px 10px;
+    /*the code makes increases the padding of the header in all direction from top right bottom and lastly left*/
+}
+
+/* 
+Now we have to start styling our first section
+*/
+/*
+we are going to set the first section's display to flex
+*/
+#firstSection{
+    display: flex;
+    /*This will display all of our divs in the firsy section of the header in a holizontal manner*/
+    align-items: center;
+    /*this is going to arrange our divs centered verticall just as we can we the text-align*/
+    align-content: space-between;
+   /*this will space our content equally acrross the firstSection only if we have specific width, I guess*/
+}
+
+/*
+let's now deal with the containers before we go to the actual elements
+*/
+#logoContainer{
+    width: 50px; /* we have this width of the container, but not the logo itself */
+}
+#h1Container{
+    flex: 1; /* this will set the head width to take up the remaining space*/
+    
+}
+#cartContainer{
+    width: 50px;  /*this width will set the cart container to 50px not the cart itself*/
+}
+
+/*Now we are going to set the images to 100 percent in order to take up the space of their respective divs*/
+
+#logo{
+    width: 100%; /*Now we have set the logo image to take the whole space of its div*/
+}
+
+header h1{  /*We have spefied that all the h1 elements in the header not the whole body, but header will take the properties we are setting here*/
+    display: inline;
+    /*this is intended to make the h1 element to take the space needed not the entire div*/
+    margin-left: 60px;
+}
+.link{
+    /*This properties are going to change the color of the link in tradelink head to red*/
+    color: red;
+}
+#cart{
+    width: 100%;  /*these property sets the width of the cart to take up the entire space of the cart container*/
+}
+
+/*
+Now we are going to style the second header
+*/
+#secondSection{
+    padding-left: 40px;
+    padding-top: 5px;
+}
+#searchBtn{
+    width: 22px;
+    height: 23px;
+    /*this will set the button to have a good width and height, which will support the search icon*/
+
+}
+#searchBar{
+   width: 250px;
+   padding: 2px; 
+   /*we want to to press the search icon inside the search bar*/
+   margin-right: -10px;
+
+}
+#searchIcon{
+    width: 100%;
+}
+
+/*let's now style the last header section the thirdSection*/
+#thirdSection{
+    /*we are going to display our items in a horizontal manner using flexbox*/
+    display: flex;
+    /*let us set all of our elements on the center vertically*/
+    align-items: center;
+}
+
+/*we are now going to style the divs of the thirdSection*/
+
+#menuContainer{
+    /*we are going to set the menu container to 50px*/
+    width: 50px;
+}
+
+#linksContainer{
+    /*we are going to set the links container to take up the remaining space*/
+    width: flex;
+}
+
+/*now we are going to style the elements inside the two divs*/
+#menuImage{
+    /*we are going to make the menu image to take up the whole space inside its div*/
+   width: 100%;
+}
+#linksContainer a{
+    margin-left: 20px;
+    /*we don't the links to be underlined*/
+    text-decoration: none;
+    /*let us change the color to black*/
+    color: black;
+}
+/*Now we are going to style the main section*/
+main{
+    position: relative;
+    right: 0;
+    left: 0;
+}
+/*we are now going to style the first section of the main area*/
+
+#mainFirstSection{
+    display: flex;
+    /*we are going to display the divs in the main section to be displayed horizontally*/
+    align-items: center;
+    /*we will add a gray background color*/
+    background-color: rgb(235, 228, 228);
+}
+/*let's begin with the divs*/
+#discountContainer{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    flex: 1;  /*the container will take up the whole free space*/
+    text-align: center;
+}
+#womanContainer{
+    width: 150px;
+}
+
+/*now we are going to style the elements inside the divs*/
+
+
+/*we must start with the image to avoid confusion*/
+#womanImage{
+    /*we are going to make the width to take the whole space in the container*/
+   width: 100%;
+}
+
+#shopNowBtn{
+    /*we are going to set the prorpeties of the shop now button*/
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+#shopNowBtn:active{
+   opacity: 0.8;
+}
+/*we are now going to style the second section of the main section*/
+#mainSecondSection{
+   display: flex;
+   /*we want the items' dive be placed in horizontal*/
+}
+#firstProduct, #secondProduct{
+    display: flex;
+    /*we are going to display them as flexbox and display the items in a horizontal manner*/
+    flex-direction: column;
+    /*we are going to give the width of the divs*/
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+#firstProduct{
+    margin-right: 40px;
+
+}
+#mainSecondSection img{
+   margin-top: 20px;
+   box-shadow: 0px 0px 2px;
+}
